@@ -7,9 +7,27 @@
     <title>Document</title>
     
     <script type="module" src="/assets/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     
 </head>
-<body>
-    
+<body onload="calc()">
+    <div class="container mt-5">
+
+        <h1 class='mb-3'>USA Federal Income Tax 2022 for Single | Tester</h1>
+
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Your Income (in USD)</label>
+            <div class="col-sm-10">
+              <input type="number" oninput='calc()'  class="form-control" id="incomeSum" value="50000" min='0' max='9999999999999999'>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Your FIT Sum</label>
+            <div class="col-sm-10">
+              <h4 id='taxSum'>-</h4>
+            </div>
+          </div>
+
+    </div>
 </body>
 </html>
